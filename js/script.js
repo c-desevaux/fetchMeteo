@@ -63,7 +63,7 @@ console.log(data);
         data__humidity.innerHTML = '<i class="fas fa-droplet"></i> ' +data.current.humidity+"%";        // Mettre à jour data__humidity.innerHTML 
         data__updated.textContent =   data.current.last_updated  // Mettre à jour data__updated.textContent 
         data__wind.innerHTML = '<i class="fas fa-wind"></i> '+data.current.wind_kph+"km/h";           // Mettre à jour data__wind.innerHTML
-        data__temperature.textContent = data.current.temp_C;    // Mettre à jour data__temperature.textContent 
+        data__temperature.textContent = data.current.temp_c+"°C";    // Mettre à jour data__temperature.textContent 
                                                                 // Mettre à jour card.classList
 
         // Mettre à jour  l'url de l'icone météo reçue data__icon.src 
