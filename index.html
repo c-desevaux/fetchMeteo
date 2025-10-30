@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Météo</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script defer src="./js/script.js"></script>
+  <script src="https://kit.fontawesome.com/345736990a.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h1 class="app__title">Météo du moment <i class="fa-solid fa-cloud-sun"></i> </h1>
+    </nav>
+  </header>
+
+  <main>
+    <div id="meteoForm" class="form">
+      <input type="text" class="form__input" placeholder="Pour quelle ville ?">
+      <button id="btnSearch" type="submit" class="form__submit">Rechercher</button>
+    </div>
+
+    <div class="data-container">
+      <div class="data meteo-data"></div>
+      <div id="card">
+        <div id="card__body">
+          <div id="data__city"></div>
+          <div id="data__updated"></div>
+          <img src="" id="data__icon">
+          <div id="data__temperature"></div>
+          <div id="data__current"></div>
+          <div id="data__humidity"><i class="fas fa-droplet"></i></div>
+          <div id="data__wind"><i class="fas fa-wind"></i> </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>API Météo - utilisation du fetch</p>
+  </footer>
+</body>
+
+</html>
