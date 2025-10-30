@@ -12,6 +12,7 @@
   const data__humidity = document.getElementById("data__humidity");
   const data__wind = document.getElementById("data__wind");
   const card = document.getElementById("card");
+  const favicon = document.getElementById("favicon");
 
   var direction = { "W": "Ouest", "N": "Nord", "S": "Sud", "E": "Est", "NE": "Nord-Est", "NW": "Nord-Ouest", "SE": "Sud-Est", "SW": "Sud-Ouest", "SSW": "Sud-Sud-Ouest", "SSE": "Sud-Sud-Est","ESE":"Est-Sud-Est","NNE": "Nord-Nord-Est", "NNW": "Nord-Nord-Ouest", "WNW": "Ouest-Nord-Ouest" };
 
@@ -56,7 +57,7 @@
 console.log(data);
         weatherDataContainerEl.textContent = "";
 
-
+        document.querySelector("link[rel~='icon']").href = data.current.condition.icon;
         // Partie à renseigner à l'aide de la documentation technique en ligne et de votre formateur
         data__city.textContent = data.location.name;                                                     // Mettre à jour data__city.textContent
         data__humidity.innerHTML = '<i class="fas fa-droplet"></i> ' +data.current.humidity+"%";         // Mettre à jour data__humidity.innerHTML 
